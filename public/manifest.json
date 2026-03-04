@@ -1,0 +1,21 @@
+{
+  "name": "PAL RUN 2026",
+  "short_name": "PAL RUN",
+  "description": "44th PAL Manila International Marathon — May 31, 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#042B67",
+  "theme_color": "#042B67",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:hfse.edu.sg)",
+      "WebFetch(domain:www.lbcexpress.com)",
+      "WebFetch(domain:megaworldinternational.com)",
+      "WebFetch(domain:www.ournoblelife.com)",
+      "WebFetch(domain:www.pnb.com.ph)",
+      "WebFetch(domain:www.philippineairlines.com)",
+      "WebFetch(domain:www.facebook.com)",
+      "Bash(npx create-next-app@14 . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(where node)",
+      "Bash(where npm)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(cmd.exe /c \"node --version && npm --version && where node && where npm\")",
+      "Bash(cmd.exe /c \"node -v\")",
+      "Bash(cmd.exe /c \"npm -v\")",
+      "Bash(powershell.exe -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; Get-Command npm -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; Get-Command npx -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -Command \"Get-Command node | fl Source\")",
+      "Bash(\"/c/Users/am13ru/AppData/Roaming/npm/npm.cmd\" --version)",
+      "Bash(cmd /c \"echo %PATH%\")",
+      "Bash(tr ';' '\\\\n')",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs:/c/Users/am13ru/AppData/Local/nvs/default:/c/Users/am13ru/AppData/Roaming/nvm/current\")"
+    ]
+  }
+}

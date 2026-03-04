@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- PAL Sunburst favicon -->
+  <circle cx="50" cy="50" r="50" fill="#042B67"/>
+  <!-- Sunrays -->
+  <g fill="#FDCB0A">
+    <polygon points="50,10 54,38 50,42 46,38"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(45, 50, 50)"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(90, 50, 50)"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(135, 50, 50)"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(180, 50, 50)"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(225, 50, 50)"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(270, 50, 50)"/>
+    <polygon points="50,10 54,38 50,42 46,38" transform="rotate(315, 50, 50)"/>
+  </g>
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="14" fill="#EC2B2A"/>
+  <circle cx="50" cy="50" r="9" fill="#FDCB0A"/>
+</svg>
