@@ -4,7 +4,7 @@ import Link from "next/link";
 import { members, getMemberBySlug, getAllSlugs } from "@/data/members";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -12,7 +12,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const member = getMemberBySlug(params.slug);
+  const { slug } = await params;
+  const member = getMemberBySlug(slug);
   if (!member) return { title: "Member Not Found" };
 
   return {
@@ -28,8 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function MemberPage({ params }: Props) {
-  const member = getMemberBySlug(params.slug);
+export default async function MemberPage({ params }: Props) {
+  const { slug } = await params;
+  const member = getMemberBySlug(slug);
   if (!member) notFound();
 
   const socials = [
@@ -72,7 +74,9 @@ export default function MemberPage({ params }: Props) {
           background: `linear-gradient(135deg, ${member.brandColor} 0%, #020f2b 100%)`,
         }}
       >
-        <div className="absolute inset-0 opacity-10" aria-hidden="true"
+        <div
+          className="absolute inset-0 opacity-10"
+          aria-hidden="true"
           style={{
             backgroundImage: `radial-gradient(circle at 80% 20%, ${member.accentColor}, transparent 60%)`,
           }}
@@ -90,7 +94,6 @@ export default function MemberPage({ params }: Props) {
           </nav>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-end gap-8">
-            {/* Logo placeholder */}
             <div
               className="w-24 h-24 rounded-2xl flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 shadow-2xl"
               style={{ backgroundColor: `${member.accentColor}30`, border: `2px solid ${member.accentColor}60` }}
@@ -122,7 +125,7 @@ export default function MemberPage({ params }: Props) {
 
               {/* Services */}
               <div className="mt-10">
-                <h3 className="text-lg font-bold text-brand-blue mb-4">Services & Expertise</h3>
+                <h3 className="text-lg font-bold text-brand-blue mb-4">Services &amp; Expertise</h3>
                 <div className="flex flex-wrap gap-3">
                   {member.services.map((s) => (
                     <span
@@ -136,7 +139,6 @@ export default function MemberPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* Placeholder notice */}
               {member.placeholder && (
                 <div className="mt-8 p-4 rounded-xl border border-brand-yellow/30 bg-brand-yellow/5">
                   <p className="text-sm text-slate-600">
@@ -148,7 +150,6 @@ export default function MemberPage({ params }: Props) {
 
             {/* Sidebar */}
             <div className="space-y-6">
-              {/* Connect */}
               <div className="rounded-2xl border border-slate-100 p-6">
                 <h3 className="font-bold text-brand-blue mb-4">Connect</h3>
                 <div className="space-y-3">
@@ -173,7 +174,6 @@ export default function MemberPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* BNG card */}
               <div
                 className="rounded-2xl p-6 text-white"
                 style={{ background: `linear-gradient(135deg, ${member.brandColor}, #020f2b)` }}
