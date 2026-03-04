@@ -7,6 +7,7 @@ import { EventDetails } from "@/components/sections/palrun/EventDetails";
 import { Prizes } from "@/components/sections/palrun/Prizes";
 import { HowToRegister } from "@/components/sections/palrun/HowToRegister";
 import { FAQ } from "@/components/sections/palrun/FAQ";
+import { BNGBanner } from "@/components/sections/palrun/BNGBanner";
 
 export const metadata: Metadata = {
   title: "PAL RUN 2026 | 44th PAL Manila International Marathon — Run Manila. Run with Pride.",
@@ -102,6 +103,7 @@ export default function HomePage() {
       <Prizes />
       <HowToRegister />
       <FAQ />
+      <BNGBanner />
     </>
   );
 }
