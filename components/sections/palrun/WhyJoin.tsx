@@ -2,7 +2,7 @@
 
 import { StaggerContainer, StaggerItem } from "@/components/ui/AnimateIn";
 import { AnimateIn } from "@/components/ui/AnimateIn";
-import { whyJoin } from "@/data/event";
+import { whyJoin, event } from "@/data/event";
 
 export function WhyJoin() {
   return (
@@ -22,10 +22,10 @@ export function WhyJoin() {
             id="why-join-heading"
             className="text-4xl sm:text-5xl font-bold text-brand-blue mb-4"
           >
-            Why You Should Run PAL RUN 2026
+            Why You Should Run BNG Run 2026
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            This isn&apos;t just a race. It&apos;s Manila lit up at night, 44 years of history under your shoes, and a finish line that could change everything.
+            This isn&apos;t just a race. It&apos;s the Filipino community in Singapore — friends, families, and colleagues — running together, giving back, and growing stronger.
           </p>
         </AnimateIn>
 
@@ -46,7 +46,7 @@ export function WhyJoin() {
 
         <AnimateIn delay={0.4} className="mt-12 text-center">
           <a
-            href="https://runsignup.com/Race/Events/PH/Manila/manilamarathon"
+            href={event.registrationUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-base px-8 py-4 inline-flex"

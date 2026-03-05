@@ -71,7 +71,7 @@ export function EventDetails() {
               </div>
               <div className="mt-6 p-4 bg-white/10 rounded-xl text-sm text-white/70">
                 <p className="font-semibold text-white mb-1">📋 Note</p>
-                <p>All times are Philippine Standard Time (PST, UTC+8). Please be at the start line at least 30 minutes before your gun start.</p>
+                <p>All times are Singapore Standard Time (SGT, UTC+8). Please be at the start line at least 30 minutes before your gun start.</p>
               </div>
             </div>
           </AnimateIn>

@@ -1,15 +1,15 @@
 export const event = {
-  name: "44th PAL Manila International Marathon",
+  name: "BNG Run 2026 — Presented by Philippine Airlines",
   brand: "PAL RUN 2026",
-  tagline: "Run Manila. Run with Pride.",
-  date: "May 31, 2026",
-  dateISO: "2026-05-31",
+  tagline: "Run. Unite. Give Back.",
+  date: "May 17, 2026",
+  dateISO: "2026-05-17",
   day: "Sunday",
-  venue: "Liwasan Ulalim (CCP), Pablo Ocampo Street, Pasay City",
-  city: "Manila, Philippines",
-  route: "Roxas Boulevard — flat and scenic",
+  venue: "OCBC Square, Kallang Wave Mall",
+  city: "Singapore",
+  route: "Kallang Waterfront — flat and fast",
   registrationUrl: "https://runsignup.com/Race/Events/PH/Manila/manilamarathon",
-  registrationDeadline: "May 24, 2026",
+  registrationDeadline: "April 30, 2026",
 };
 
 export const categories = [
@@ -19,7 +19,7 @@ export const categories = [
     shortLabel: "42K",
     gunStart: "1:00 AM",
     fee: "$100",
-    description: "The ultimate test of endurance. Conquer the full 42.195 km course along Roxas Boulevard.",
+    description: "The ultimate test of endurance. Conquer the full 42.195 km course along Singapore's iconic Kallang Waterfront.",
     color: "#042B67",
     icon: "🏆",
   },
@@ -29,7 +29,7 @@ export const categories = [
     shortLabel: "21K",
     gunStart: "2:00 AM",
     fee: "$75",
-    description: "Challenge your limits on the iconic Manila course. The perfect distance for serious runners.",
+    description: "Challenge your limits on a beautiful Singapore route. The perfect distance for serious runners ready to push further.",
     color: "#EC2B2A",
     icon: "🥇",
   },
@@ -84,18 +84,18 @@ export const prizes = [
 
 export const whyJoin = [
   {
-    title: "44 Years of Legacy",
-    description: "The Original & Legitimate Manila Marathon, first run in 1982. Be part of a race with 44 years of history and heart.",
-    icon: "🏛️",
+    title: "Filipino Community, United",
+    description: "BNG Run brings together Filipinos in Singapore — friends, families, and colleagues — in a shared celebration of fitness, camaraderie, and cultural pride.",
+    icon: "🇵🇭",
   },
   {
-    title: "Iconic Night Run",
-    description: "Run under the vibrant city lights of Manila. An unforgettable race experience through lively, energetic neighborhoods.",
-    icon: "🌃",
+    title: "More Than a Race",
+    description: "Every stride you take fosters resilience, teamwork, and a spirit of giving. BNG Run is about the bonds we build, not just the kilometers we cover.",
+    icon: "🤝",
   },
   {
     title: "Win Airline Tickets",
-    description: "Top 50 finishers in the marathon category win free flights. Your finish line could be your next departure gate.",
+    description: "Top 50 finishers in the marathon category win free Philippine Airlines flights. Your finish line could be your next departure gate.",
     icon: "✈️",
   },
   {
@@ -110,7 +110,7 @@ export const whyJoin = [
   },
   {
     title: "Flat & Fast Course",
-    description: "Run Roxas Boulevard — one of Manila's most scenic and fastest routes. Ideal for personal bests and PRs.",
+    description: "Run the Kallang Waterfront — one of Singapore's most scenic and fastest routes. Ideal for personal bests and PRs.",
     icon: "⚡",
   },
 ];
@@ -129,7 +129,7 @@ export const registrationSteps = [
   {
     step: 3,
     title: "Complete Payment",
-    description: "Pay securely online. Registration closes on May 24, 2026.",
+    description: "Pay securely online. Registration closes on April 30, 2026.",
   },
   {
     step: 4,
@@ -138,15 +138,15 @@ export const registrationSteps = [
   },
   {
     step: 5,
-    title: "Run Manila",
-    description: "Show up on May 31 ready to run. Every kilometer is a victory.",
+    title: "Race Day — May 17",
+    description: "Show up on May 17 ready to run. Every kilometer is a victory and every finisher is family.",
   },
 ];
 
 export const faqs = [
   {
-    q: "When and where is PAL RUN 2026?",
-    a: "PAL RUN 2026 (44th PAL Manila International Marathon) takes place on Sunday, May 31, 2026, at Liwasan Ulalim (CCP), Pablo Ocampo Street, Pasay City, Manila.",
+    q: "When and where is BNG Run 2026?",
+    a: "BNG Run 2026 takes place on Sunday, May 17, 2026, at OCBC Square, Kallang Wave Mall, Singapore.",
   },
   {
     q: "What distances are available?",
@@ -166,11 +166,11 @@ export const faqs = [
   },
   {
     q: "What is the registration deadline?",
-    a: "Registration closes on May 24, 2026 at 11:59 PM. Slots are limited — don't miss your chance.",
+    a: "Registration closes on April 30, 2026 at 11:59 PM. Slots are limited — don't miss your chance.",
   },
   {
     q: "Is this suitable for beginners?",
-    a: "Absolutely. The 5K Fun Run is open to all fitness levels. The flat, fast course along Roxas Boulevard makes it a great first race.",
+    a: "Absolutely. The 5K Fun Run is open to all fitness levels, including friends and families. The flat, fast course makes it a great first race experience.",
   },
   {
     q: "How do I register?",
