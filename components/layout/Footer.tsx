@@ -4,9 +4,10 @@ const footerLinks = {
   "PAL RUN 2026": [
     { label: "Why Join", href: "/#why-join" },
     { label: "Race Categories", href: "/#categories" },
-    { label: "Race Inclusions", href: "/#inclusions" },
     { label: "Prizes", href: "/#prizes" },
     { label: "How to Register", href: "/#register" },
+    { label: "Past Runs", href: "/runs" },
+    { label: "Gallery", href: "/gallery" },
     { label: "FAQ", href: "/#faq" },
   ],
   "BNG Community": [
@@ -40,11 +41,11 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-white font-bold text-base">PAL RUN 2026</p>
-                <p className="text-white/50 text-xs">44th PAL Manila International Marathon</p>
+                <p className="text-white/50 text-xs">BNG Run — May 17, 2026 · Singapore</p>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/60 max-w-sm">
-              The Original &amp; Legitimate Manila Marathon since 1982. Run under the lights of Manila. Run with Pride.
+              Uniting the Filipino community in Singapore through fitness, camaraderie, and a shared commitment to well-being. Run. Unite. Give Back.
             </p>
             <div className="mt-6 flex items-center gap-2">
               <span className="text-xs text-white/40">Organized by</span>

@@ -11,8 +11,8 @@ import { event } from "@/data/event";
 const navLinks = [
   { href: "/", label: "PAL RUN 2026" },
   { href: "/bng", label: "About BNG" },
-  { href: "/#categories", label: "Race Categories" },
-  { href: "/#why-join", label: "Why Join" },
+  { href: "/runs", label: "Past Runs" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/#faq", label: "FAQ" },
 ];
 
