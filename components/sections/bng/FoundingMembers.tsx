@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/AnimateIn";
 import { members } from "@/data/members";
@@ -33,13 +34,15 @@ export function FoundingMembers() {
                   className="h-full rounded-2xl border border-slate-100 bg-white p-6 flex flex-col gap-4 hover:border-brand-blue/30 hover:shadow-xl hover:shadow-brand-blue/5 hover:-translate-y-1 transition-all duration-300"
                   style={{ borderTopColor: member.brandColor, borderTopWidth: "3px" }}
                 >
-                  {/* Brand color dot */}
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center text-white text-xl font-bold flex-shrink-0"
-                    style={{ backgroundColor: member.brandColor }}
-                    aria-hidden="true"
-                  >
-                    {member.shortName.charAt(0)}
+                  {/* Member logo */}
+                  <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center p-1.5 flex-shrink-0 shadow-sm border border-slate-100">
+                    <Image
+                      src={member.logo}
+                      alt={member.name}
+                      width={44}
+                      height={44}
+                      className="object-contain w-full h-full"
+                    />
                   </div>
 
                   <div className="flex-1">

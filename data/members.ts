@@ -13,6 +13,7 @@ export interface Member {
   linkedin: string | null;
   twitter: string | null;
   services: string[];
+  logo: string;
   placeholder?: boolean;
 }
 
@@ -27,6 +28,7 @@ export const members: Member[] = [
     longDescription:
       "Founded in 2015 by Filipino expatriates Ninalyn and Gary Cacananta, HFSE International School represents a milestone for the Filipino community in Singapore. As the first Filipino-run educational institution on the island, HFSE provides an integrated curriculum combining Singaporean and Philippine educational standards, serving students from Primary 1 to Secondary 4. The school is built on the belief that every child deserves access to quality international education while remaining deeply connected to their heritage and culture.",
     website: "https://hfse.edu.sg/",
+    logo: "/logos/hfse.png",
     brandColor: "#242e76",
     accentColor: "#ed7622",
     facebook: null,
@@ -45,6 +47,7 @@ export const members: Member[] = [
     longDescription:
       "Founded in 1945, LBC Express began as a brokerage and air cargo agent and pioneered time-sensitive cargo delivery in the Philippines. Today, LBC operates in over 24 countries, making it the essential lifeline for Filipino overseas workers and diaspora communities around the world. Known as the 'Hari ng Padala' (King of Delivery), LBC's Singapore branch provides critical remittance services, balikbayan box forwarding, and express courier services that connect Filipinos in Singapore to their families back home.",
     website: "https://www.lbcexpress.com/",
+    logo: "/logos/lbc.png",
     brandColor: "#D00149",
     accentColor: "#000000",
     facebook: "https://www.facebook.com/LBCExpress/",
@@ -63,6 +66,7 @@ export const members: Member[] = [
     longDescription:
       "Megaworld International serves as the international marketing arm of Megaworld Corporation, the Philippines' largest real estate developer. With offices in 60+ countries spanning Europe, Asia Pacific, North America, and the Middle East, Megaworld International specializes in township development featuring the 'live-work-play-learn-shop' lifestyle concept. Their Singapore office connects Filipino expatriates and international investors to some of the Philippines' most prestigious and innovative property developments, offering world-class investment opportunities for the global Filipino community.",
     website: "https://megaworldinternational.com/",
+    logo: "/logos/megaworld.jpg",
     brandColor: "#1d5295",
     accentColor: "#a74799",
     facebook: "https://www.facebook.com/megaworldintlmktg",
@@ -81,6 +85,7 @@ export const members: Member[] = [
     longDescription:
       "Established in 2006 with combined headquarters in Singapore and the Philippines, Noble Life International was founded by Ms. Lila Baylon-Macapinlac with a mission to help people live healthier, fuller lives. The company markets scientifically formulated organic health foods and wellness products through a global network of health educators and direct marketing channels. Noble Life operates across multiple Asian markets including Singapore, Philippines, Hong Kong, and beyond, empowering communities through health education and entrepreneurial opportunities.",
     website: "https://www.ournoblelife.com/",
+    logo: "/logos/noble-life.png",
     brandColor: "#062B6A",
     accentColor: "#02cff6",
     facebook: "https://www.facebook.com/NobleLifeIntl",
@@ -99,6 +104,7 @@ export const members: Member[] = [
     longDescription:
       "MDC Prime Consulting Pte. Ltd. is a Singapore-based general management consultancy firm committed to empowering small and medium enterprises (SMEs) to grow, adapt, and thrive. The firm provides comprehensive business support services across three core areas: strategy development, learning and development programs, and operational excellence. As a proud founding member of the Business Network Group (BNG), MDC Prime Consulting brings deep expertise in business transformation to the Filipino business community in Singapore.",
     website: null,
+    logo: "/logos/mdc-prime.png",
     brandColor: "#1a1a2e",
     accentColor: "#4a90d9",
     facebook: "https://www.facebook.com/mdcprimeconsulting/",
@@ -118,6 +124,7 @@ export const members: Member[] = [
     longDescription:
       "Philippine National Bank (PNB) is one of the Philippines' leading banking institutions, with over 70 overseas branches and offices across the globe. The Singapore branch, located at Lucky Plaza on Orchard Road, serves as a vital financial bridge for Filipino expatriates and overseas workers. PNB Singapore offers a full range of services including remittance to the Philippines, personal and business banking, fixed deposits, loans, and government payment services such as SSS and PAG-IBIG — making it an indispensable partner for the Filipino community in Singapore.",
     website: "https://www.pnb.com.ph/",
+    logo: "/logos/pnb.png",
     brandColor: "#103579",
     accentColor: "#30CDD7",
     facebook: null,
@@ -136,6 +143,7 @@ export const members: Member[] = [
     longDescription:
       "Philippine Airlines (PAL) is Asia's oldest airline still operating under its original name, founded on February 26, 1941. As the Philippines' national flag carrier and largest international airline, PAL operates an extensive network of regional and international routes from its hub at Ninoy Aquino International Airport. PAL's Singapore operations provide essential connectivity for the Filipino diaspora, offering regular direct flights to Manila and onward connections to destinations across the Philippines. With Business, Premium Economy, and Economy cabin classes, PAL delivers warm Filipino hospitality at 35,000 feet.",
     website: "https://www.philippineairlines.com/",
+    logo: "/logos/pal.png",
     brandColor: "#042B67",
     accentColor: "#EC2B2A",
     facebook: null,

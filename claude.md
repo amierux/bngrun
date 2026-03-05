@@ -223,10 +223,11 @@
 2. **Local first** — do NOT deploy to Vercel without explicit user approval
 3. **SEO-first** — every page must have: title, description, OG tags, sitemap, robots.txt
 4. **Git versioning** — conventional commits; no force-push; no reset --hard without approval
-5. **Tone:** Energetic, motivational, benefit-forward — emphasize WHY to join
-6. **Performance:** Lighthouse ≥ 90 across Performance, SEO, Accessibility
-7. **Accessibility:** WCAG AA compliant throughout
-8. **Animations:** Always include `prefers-reduced-motion` fallback
+5. **Review gate** — NEVER auto-commit or auto-push changes. Always present changes locally for the user to review first. Only run `git add` + `git commit` + `git push` when explicitly instructed by the user. Same applies to Vercel deployment — do not run `vercel --prod` without explicit user approval.
+6. **Tone:** Energetic, motivational, benefit-forward — emphasize WHY to join
+7. **Performance:** Lighthouse ≥ 90 across Performance, SEO, Accessibility
+8. **Accessibility:** WCAG AA compliant throughout
+9. **Animations:** Always include `prefers-reduced-motion` fallback
 
 ---
 
@@ -268,3 +269,6 @@
 | 2026-03-04 | Project Constitution initialized | System Pilot |
 | 2026-03-04 | Design system added (glassmorphism, animations, tokens) | System Pilot |
 | 2026-03-04 | All 7 BNG member schemas confirmed | System Pilot |
+| 2026-03-05 | Rebranded to BNG Run 2026; venue → Singapore; date → May 17 | System Pilot |
+| 2026-03-05 | Added review gate rule (no auto-commit/deploy) | System Pilot |
+| 2026-03-05 | Downloaded member logos to /public/logos/; added to all member UIs | System Pilot |

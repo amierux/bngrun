@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/AnimateIn";
 import { members } from "@/data/members";
@@ -22,6 +23,16 @@ export function BNGBanner() {
             <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 text-xs font-semibold text-brand-yellow tracking-widest uppercase mb-6">
               🇵🇭 Proudly Organized By
             </div>
+            {/* BNG Logo */}
+            <div className="mb-4">
+              <Image
+                src="/logos/bng.png"
+                alt="Business Network Group"
+                width={180}
+                height={60}
+                className="object-contain brightness-0 invert"
+              />
+            </div>
             <h2
               id="bng-banner-heading"
               className="text-4xl sm:text-5xl font-bold text-white mb-4"
@@ -36,7 +47,7 @@ export function BNGBanner() {
             </Link>
           </AnimateIn>
 
-          {/* Member avatars */}
+          {/* Member logos */}
           <AnimateIn delay={0.2}>
             <StaggerContainer className="grid grid-cols-4 gap-3">
               {members.map((m) => (
@@ -46,11 +57,14 @@ export function BNGBanner() {
                     className="group flex flex-col items-center gap-2"
                     title={m.name}
                   >
-                    <div
-                      className="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-bold text-base shadow-lg group-hover:scale-110 group-hover:shadow-xl transition-all duration-200"
-                      style={{ backgroundColor: m.brandColor }}
-                    >
-                      {m.shortName.charAt(0)}
+                    <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center p-2 shadow-lg group-hover:scale-110 group-hover:shadow-xl transition-all duration-200">
+                      <Image
+                        src={m.logo}
+                        alt={m.name}
+                        width={48}
+                        height={48}
+                        className="object-contain w-full h-full"
+                      />
                     </div>
                     <span className="text-white/50 text-xs text-center leading-tight group-hover:text-white transition-colors">
                       {m.shortName}

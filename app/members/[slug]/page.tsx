@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { members, getMemberBySlug, getAllSlugs } from "@/data/members";
 
@@ -95,11 +96,16 @@ export default async function MemberPage({ params }: Props) {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-end gap-8">
             <div
-              className="w-24 h-24 rounded-2xl flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 shadow-2xl"
-              style={{ backgroundColor: `${member.accentColor}30`, border: `2px solid ${member.accentColor}60` }}
-              aria-hidden="true"
+              className="w-24 h-24 rounded-2xl bg-white flex items-center justify-center p-3 flex-shrink-0 shadow-2xl"
             >
-              {member.shortName.charAt(0)}
+              <Image
+                src={member.logo}
+                alt={member.name}
+                width={80}
+                height={80}
+                className="object-contain w-full h-full"
+                priority
+              />
             </div>
             <div>
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 text-xs font-semibold text-white/70 tracking-wider uppercase mb-3">
@@ -204,12 +210,14 @@ export default async function MemberPage({ params }: Props) {
                 href={`/members/${m.slug}`}
                 className="group flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-100 bg-white hover:border-brand-blue/20 hover:shadow-md transition-all duration-200"
               >
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center text-white text-sm font-bold"
-                  style={{ backgroundColor: m.brandColor }}
-                  aria-hidden="true"
-                >
-                  {m.shortName.charAt(0)}
+                <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1 border border-slate-100">
+                  <Image
+                    src={m.logo}
+                    alt={m.name}
+                    width={36}
+                    height={36}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <p className="text-xs font-semibold text-slate-600 text-center group-hover:text-brand-blue transition-colors leading-tight">
                   {m.shortName}

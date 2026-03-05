@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { event } from "@/data/event";
 import { getCountdown } from "@/lib/utils";
@@ -94,11 +95,15 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center gap-2 glass rounded-full px-5 py-2 text-xs font-semibold text-brand-yellow tracking-widest uppercase mb-8"
+            className="inline-flex items-center gap-3 glass rounded-full px-5 py-2.5 text-xs font-semibold text-brand-yellow tracking-widest uppercase mb-8"
           >
-            <span aria-hidden="true">✈</span>
+            <div className="bg-white rounded-md p-0.5 flex items-center justify-center flex-shrink-0">
+              <Image src="/logos/pal.png" alt="Philippine Airlines" width={32} height={20} className="object-contain" />
+            </div>
             <span>Philippine Airlines Presents</span>
-            <span aria-hidden="true">✈</span>
+            <div className="bg-white rounded-md p-0.5 flex items-center justify-center flex-shrink-0">
+              <Image src="/logos/bng.png" alt="BNG" width={32} height={20} className="object-contain" />
+            </div>
           </motion.div>
 
           {/* Heading */}

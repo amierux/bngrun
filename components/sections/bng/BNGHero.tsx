@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -37,6 +38,18 @@ export function BNGHero() {
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-xs font-semibold text-brand-yellow tracking-widest uppercase mb-6">
             <span>🇵🇭</span>
             <span>Singapore&apos;s Premier Filipino Business Group</span>
+          </div>
+
+          {/* BNG Logo */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/logos/bng.png"
+              alt="Business Network Group"
+              width={220}
+              height={80}
+              className="object-contain brightness-0 invert"
+              priority
+            />
           </div>
 
           <h1 className="text-5xl sm:text-7xl font-bold text-white mb-4 tracking-tight">

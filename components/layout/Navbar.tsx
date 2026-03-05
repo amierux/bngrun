@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { event } from "@/data/event";
 
 const navLinks = [
   { href: "/", label: "PAL RUN 2026" },
@@ -41,12 +43,12 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group" aria-label="PAL RUN 2026 Home">
-          <div className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-            <span className="text-brand-yellow font-bold text-sm">✈</span>
+          <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center overflow-hidden p-1 flex-shrink-0">
+            <Image src="/logos/pal.png" alt="Philippine Airlines" width={28} height={28} className="object-contain w-full h-full" />
           </div>
           <div className="hidden sm:block">
             <p className="text-white font-bold text-sm leading-none">PAL RUN 2026</p>
-            <p className="text-white/60 text-xs">44th Manila Marathon</p>
+            <p className="text-white/60 text-xs">BNG Run — {event.date}</p>
           </div>
         </Link>
 
@@ -72,7 +74,7 @@ export function Navbar() {
         {/* CTA */}
         <div className="flex items-center gap-3">
           <a
-            href="https://runsignup.com/Race/Events/PH/Manila/manilamarathon"
+            href={event.registrationUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm px-5 py-2.5 hidden sm:inline-flex"
@@ -118,7 +120,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://runsignup.com/Race/Events/PH/Manila/manilamarathon"
+                href={event.registrationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary mt-2 text-sm"
